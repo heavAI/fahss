@@ -1,0 +1,143 @@
+/* Main Container */
+.dashboard-container {
+    flex-grow: 1;
+    padding: 24px;
+    background-color: #f5f7fa;
+    margin-top: 20px;
+  }
+  
+  /* Title Section */
+  .dashboard-title {
+    
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    color: #2c3e50;
+    font-weight: 600;
+  }
+  
+  .title-icon {
+    margin-right: 12px; 
+    color: #3498db;
+  }
+  
+  /* Stat Cards */
+  .stat-card {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    transition: all 0.3s ease;
+    background-color: white;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .stat-icon-container {
+    color: #3498db;
+    margin-bottom: 16px;
+  }
+  
+  .stat-title {
+    color: #7f8c8d;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .stat-value-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  
+  .stat-value {
+    color: #2c3e50;
+    font-weight: 700;
+  }
+  
+  /* Trend Chips */
+  .trend-chip {
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  
+  .trend-chip.up {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+  }
+  
+  .trend-chip.down {
+    background-color: #ffebee;
+    color: #c62828;
+  }
+  
+  .trend-chip.neutral {
+    background-color: #e3f2fd;
+    color: #1565c0;
+  }
+  
+  /* Section Cards */
+  .section-card {
+    padding: 20px;
+    height: 100%;
+    background-color: white;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .section-icon {
+    margin-right: 12px;
+    color: #3498db;
+  }
+  
+  .section-title {
+    color: #2c3e50;
+    font-weight: 600;
+  }
+  
+  .section-content {
+    height: calc(100% - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .chart-container {
+    min-height: 300px;
+  }
+  
+  .placeholder-text {
+    color: #95a5a6;
+    text-align: center;
+    font-style: italic;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      padding: 16px;
+    }
+    
+    .stat-card {
+      padding: 16px;
+    }
+    
+    .section-card {
+      padding: 16px;
+    }
+  }

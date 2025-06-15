@@ -1,0 +1,207 @@
+/* Main Container */
+.reports-container {
+    flex-grow: 1;
+    padding: 24px;
+    background-color: #f5f7fa;
+    margin-top: 20px;
+  }
+  
+  /* Title Section */
+  .reports-title {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    color: #2c3e50;
+    font-weight: 600;
+  }
+  
+  .title-icon {
+    margin-right: 12px;
+    color: #3498db;
+  }
+  
+  /* Report Sections */
+  .report-section {
+    padding: 20px;
+    height: 100%;
+    background-color: white;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .section-header {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .section-icon {
+    margin-right: 8px;
+    color: #3498db;
+  }
+  
+  /* Report Lists */
+  .report-list {
+    padding: 0;
+  }
+  
+  .report-item {
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .report-icon {
+    min-width: 40px;
+    color: #3498db;
+  }
+  
+  .report-name {
+    font-weight: 500;
+    color: #2c3e50;
+  }
+  
+  .report-description {
+    color: #7f8c8d;
+    font-size: 0.875rem;
+  }
+  
+  .report-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 4px;
+  }
+  
+  .report-date {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #7f8c8d;
+    font-size: 0.875rem;
+  }
+  
+  .report-divider {
+    margin-left: 56px;
+    background-color: #e0e0e0;
+  }
+  
+  /* Format Chips */
+  .format-chip {
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .format-chip.pdf {
+    background-color: #ffebee;
+    color: #c62828;
+  }
+  
+  .format-chip.excel {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+  }
+  
+  /* Action Buttons */
+  .report-actions {
+    display: flex;
+    gap: 4px;
+  }
+  
+  .action-button {
+    padding: 6px;
+    color: #7f8c8d;
+  }
+  
+  .action-button:hover {
+    background-color: #f5f7fa;
+  }
+  
+  .action-button.download:hover {
+    color: #3498db;
+  }
+  
+  .action-button.email:hover {
+    color: #e74c3c;
+  }
+  
+  .action-button.schedule:hover {
+    color: #f39c12;
+  }
+  
+  /* Custom Report Section */
+  .custom-report-section {
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .custom-report-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .form-description {
+    color: #7f8c8d;
+    font-style: italic;
+  }
+  
+  .form-fields {
+    margin-top: 8px;
+  }
+  
+  .form-field .MuiOutlinedInput-root {
+    border-radius: 8px;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 16px;
+  }
+  
+  .preview-button {
+    border-color: #bdc3c7;
+    color: #2c3e50;
+  }
+  
+  .generate-button {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .generate-button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .reports-container {
+      padding: 16px;
+    }
+    
+    .report-item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    
+    .report-actions {
+      align-self: flex-end;
+    }
+    
+    .report-divider {
+      margin-left: 0;
+    }
+    
+    .form-actions {
+      justify-content: center;
+    }
+  }
